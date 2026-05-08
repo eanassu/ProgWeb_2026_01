@@ -1,0 +1,84 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+$(function(){
+
+$("h1").toggle();
+
+$("button").click(function() {
+	$("p.classe1").slideToggle(1000);
+});
+
+$("tr:odd").css("background-color", "yellow");
+
+$("#id1").click( function() {
+	$(this).css("background-color", "yellow");
+});
+
+$("#id1").hover( function() {
+	$(this).css("background-color", "red");
+},
+function() {
+	$(this).css("background-color", "white");
+}
+);
+
+
+$("#id2").mousedown( function() {
+	$(this).css("background-color", "blue");
+});
+
+$("#id2").mouseup( function() {
+	$(this).css("background-color", "green");
+});
+
+});
+</script>
+</head>
+<body>
+
+<h1>cabeçalho</h1>
+<h2>cabeçalho</h2>
+
+<p id="id1" class="classe1">Paragrafo 1</p>
+<p id="id2">Paragrafo 2</p>
+
+<button>se clicar os paragrafos vao ser escondidos</button>
+
+<br/>
+<br/>
+
+<table border="1">
+  <tr>
+    <th>Company</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbköp</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+</table>
+
+</body>
+
+</html>

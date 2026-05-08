@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+$(function(){
+
+$("#botao1").click(function() {
+	$("#id1").prepend("Texto novo")
+	$("#id2").empty();
+});
+
+$("#botao2").click(function() {
+	$("#id1").addClass("azul");
+	$("#id2").addClass("azul");
+	$("p").css({"background-color": "yellow", "font-size": "200%"});
+});
+
+});
+
+</script>
+<style>
+.azul {
+	color:blue;
+}	
+</style>	
+</head>
+<body>
+
+<div>
+<p id="id1">Texto Texto <b>Negrito</b> Texto </p>
+</div>
+<p id="id2">Vai sumir</p>
+
+<button id="botao1">Texto</button>
+
+<button id="botao2">Texto</button>
+
+</body>
+
+</html>

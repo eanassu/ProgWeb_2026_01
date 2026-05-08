@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript"">
+	function funcao() {
+		var valor1 = document.forms["formulario"]["valor1"].value;
+		var valor2 = document.forms["formulario"]["valor2"].value;
+		document.getElementById("resultado").innerHTML=Number(valor1)+Number(valor2);
+	}
+</script>
+</head>
+<body>
+
+<form name="formulario" onsubmit="return funcao()">
+valor 1: <input type="text" name="valor1"><br/>
+valor 2: <input type="text" name="valor2"><br/>
+<input type="submit" value="botão">
+</form>
+
+<p id="resultado"></p>
+
+</body>
+</html>

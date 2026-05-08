@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+$(function(){
+
+$("#botao1").click(function() {
+	alert("Texto:" + $("#id1").text());
+});
+$("#botao2").click(function() {
+	alert("html:" + $("#id1").html());
+});
+
+$("#botao3").click(function() {
+	alert("valor:" + $("#campo1").val());
+	$("#campo2").val("teste");
+});
+
+
+});
+
+</script>
+</head>
+<body>
+
+<p id="id1">Texto Texto <b>Negrito</b> Texto </p>
+
+<button id="botao1">Texto</button>
+<button id="botao2">html</button>
+
+<input type="text" id="campo1" value="Eugênio"/>
+
+<input type="text" id="campo2"/>
+
+<button id="botao3">Valor</button>
+
+</body>
+
+</html>

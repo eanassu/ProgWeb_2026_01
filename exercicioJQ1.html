@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>    
+<script>
+$(function(){
+    $("#botao").click(function() {
+        valor1 = $("#campo1").val();
+        valor2 = $("#campo2").val();
+        resultado = Number(valor1) + Number(valor2);
+        $("#resultado").text(resultado);
+    });        
+});
+
+</script>
+<title>Teste JQuery</title>
+</head>
+<body>
+    <input type="text" id="campo1"/><br/>
+    <input type="text" id="campo2"/><br/>
+    <button id="botao">calcular</button>
+    <p id="resultado"></p>
+</body>
+</html>

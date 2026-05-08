@@ -1,0 +1,26 @@
+body {
+  background-image: url("img/pikachu.png");
+  background-color: blue;
+}
+
+/* comentário */
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 25px;
+  color:white;
+}
+
+#h1_1 {
+  color: yellow;
+  text-align: center;
+}
+
+.center{
+	text-align: center;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function imprimir() {
+        saida = '';
+        for( let i = 0; i < 10; i++ ) {
+            saida += i + ' ';
+        }
+        document.getElementById('valor').innerHTML=saida;
+    }
+    </script>
+</head>
+<body>
+  <button type="button" onclick="imprimir()">calcula!</button>
+  <p id="valor"></p>
+</body>
+</html>

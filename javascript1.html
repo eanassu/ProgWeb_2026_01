@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <script>
+        function calcularIMC( ) {
+            let peso = document.getElementById('peso').value;
+            let altura = document.getElementById('altura').value;
+            let imc = peso/(altura*altura);
+            document.getElementById('imc').innerHTML = imc;
+            if(imc < 18.5) {
+                document.getElementById('avaliacao').innerHTML='abaixo do peso';
+            } else if(imc < 25) {
+                document.getElementById('avaliacao').innerHTML='normal';
+            } else if (imc < 30) {
+                document.getElementById('avaliacao').innerHTML='sobrepeso';
+            } else {
+                document.getElementById('avaliacao').innerHTML='obeso';
+            }
+            
+        }
+    </script>
+</head>
+<body>
+
+peso:<input type="text" name="pesp" id="peso"/><br/>
+altura:<input type="text" name="altura" id="altura"/><br/>
+
+<button type="button" onclick="calcularIMC()">calcula!</button>
+
+<p id="imc"></p>
+<p id="avaliacao"></p>
+
+</body>
+</html>
