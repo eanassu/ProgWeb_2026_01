@@ -23,6 +23,7 @@ if ($funcionario) {
     // Exibir os dados do funcionário em um formulário para edição
     $dataAdmissao = DateTime::createFromFormat($formato, $funcionario->getDataAdmissao());
     ?>
+    Alterando Funcionário <?php echo $funcionario->getRe(); ?>:<br/>
     <form action="alterar.php" method="post">
         <input type="hidden" name="re" value="<?php echo $funcionario->getRe(); ?>">
         <label for="nome">Nome:</label>
